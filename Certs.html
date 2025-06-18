@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+function toggleHide(id) {
+  const sections = document.querySelectorAll('.course-section');
+    sections.forEach(section => {
+      if (section.id === id) {
+        section.style.display = (section.style.display === "block") ? "none" : "block";
+      } else {
+        section.style.display = "none";
+      }
+    });
+  }
+
+  // Ensure all sections are hidden on page load (redundant if CSS already does it)
+  window.onload = function() {
+    const sections = document.querySelectorAll('.course-section');
+    sections.forEach(section => section.style.display = "none");
+  };
+</script>
+    <meta charset="UTF-8" />
+    <title>Robert Rose - IT Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <video autoplay muted loop id="BGVideo">
+    <source src="./Assets/BG.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+    </video>
+    <div id = "PageContent">
+    <h1 id="HeadTitle">Robert Rose - IT Analyst</h1>
+    <br>
+    <div class="profile-container">
+        <a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8" target="_blank">
+        <img src="./Assets/pic.jpg" alt="Profile Picture" class="profile-pic">
+        </a>
+    </div>
+  <nav>
+  <div class="navbar">
+    <div class="nav-left">
+      <a href="./index.html">Main Page</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Shredd" target="_blank">GitHub</a>
+    </div>
+  </div>
+</nav>
+    <br><br>
+    <h1>Course's Completed</h1>
+    <br>
+    <h5><em>Click the Button's to see the Course's: </em></h5>
+    <div id="CourseNav">
+    <button onclick="toggleHide('IT')">IT Courses</button>
+    <button onclick="toggleHide('webdev')">Web Development Courses</button>
+    <button onclick="toggleHide('Python')">Python Courses</button>
+    <button onclick="toggleHide('Cncpp')">C/C++ Courses</button>
+    <button onclick="toggleHide('GameDev')">Game Development Courses</button>
+    <button onclick="toggleHide('Other')">Other Courses</button>
+    </div>
+    <br>
+    <br>
+    <div id = "projects">
+
+      <div id="Python" class="course-section"> 
+      <div class="certificate-block">
+        <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/a65409ac4d6e488a9e145bfad8585399" target="_blank" class="certificate-link">
+          <div class="certificate-thumbnail">
+            <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+          </div>
+          <div class="certificate-details">
+            <h3>Learn Advanced Python 3: Logging Course</h3>
+            <p><strong>Issuer:</strong> Codecademy</p>
+            <p><strong>Issued:</strong> June 2025</p>
+            <button class="view-credential-button">Show Credential</button>
+          </div>
+        </a>
+      </div>
+      </div>
+
+      <div id="Cncpp" class="course-section">
+        <div class="certificate-block">
+  <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/f2ef2f067b374ec785682f7106bb9682" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Learn C: Introduction Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+      </div>
+
+       <div id="IT" class="course-section">
+      <div class="certificate-block">
+  <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/85cb09c961e0496ea8a2646769272b37" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Intro to the Command Line Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+    </div>
+
+    <div id = "webdev" class="course-section">
+      
+<div class="certificate-block">
+  <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/5e4c6705f21846aea9ab451bcbfb38ed" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Deploying Websites using Git and GitHub Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+
+<div class="certificate-block">
+  <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/f8173ec10ceb48cba2d26478194178d4" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Learn CSS: Browser Compatibility Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+
+<div class="certificate-block">
+  <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/a365cec2b37e43c583d3862e1d1477e4" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Learn CSS: Transitions and Animations Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+
+<div class="certificate-block">
+  <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Learn HTML Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+
+<div class="certificate-block">
+  <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/13f68dfe9ab344dc929ddaf58daff3a8" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Learn HTML: Forms Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+
+<div class="certificate-block">
+  <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/5b2b97b04c9948bfb45c5e6f17498a7f" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Learn HTML: Semantic HTML Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+
+<div class="certificate-block">
+  <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/5b2b97b04c9948bfb45c5e6f17498a7f" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Learn HTML: Tables Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+
+    </div>
+      <div id = "GameDev" class="course-section">
+      <div class="certificate-block">
+       <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/fd75291f239d471e81c5a14ff80a27a8" target="_blank" class="certificate-link">
+        <div class="certificate-thumbnail">
+         <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+     </div>
+    <div class="certificate-details">
+      <h3>Introduction to Game Development Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+       </div>
+        </a>
+      </div>
+    </div>
+
+    <div id = "Other" class="course-section">
+    <div class="certificate-block">
+    <a href="https://www.codecademy.com/profiles/ShreddingBytes/certificates/3d1976adb480406197a8e8765fe3f884" target="_blank" class="certificate-link">
+    <div class="certificate-thumbnail">
+      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH81kKlXtE0og/company-logo_100_100/company-logo_100_100/0/1720724787444/codecademy_logo?e=1755734400&amp;v=beta&amp;t=ZrrAl9a-j0CptljAh7TxTGwpRSgClu5jefBavSHKAeI" alt="Codecademy Logo">
+    </div>
+    <div class="certificate-details">
+      <h3>Choosing a Programming Language Course</h3>
+      <p><strong>Issuer:</strong> Codecademy</p>
+      <p><strong>Issued:</strong> June 2025</p>
+      <button class="view-credential-button">Show Credential</button>
+    </div>
+  </a>
+</div>
+    </div>
+    </div>
+    <br><br>
+    <footer>
+      | 2025 | Robert Rose - IT Portfolio
+    </footer>
+    </div>
+</body>
+</html>

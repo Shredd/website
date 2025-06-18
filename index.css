@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#HeadTitle {
+  color: #f0f0f0;
+  font-size: 45px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid red;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(82, 18, 18, 0.75);
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 40px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+
+#BGVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#PageContent {
+  padding-top: 90px;
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: rgba(82, 18, 18, 1);
+  border-radius: 10px;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow: 0 8px 20px rgba(0,0,0,1);
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+h3, h6 {
+  color: #ddd;
+}
+
+strong {
+    color: #fff;
+}
+
+@keyframes slowBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.slow-blink {
+  animation: slowBlink 2s infinite;
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: rgba(255, 0, 0, 0.2) 0px 1px, rgba(255, 0, 0, 0.3) 0px 1px;
+}
+
+p {
+  color: #f0f0f0;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+#About, #Goals, #projects {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: white;
+  z-index: 11;
+}
+
+.project-card {
+  max-width: 800px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.project-card a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.project-card-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.project-thumb img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain; /* changed from cover to contain */
+  border-radius: 8px;
+  background: #222; /* optional: add a background so empty space looks good */
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ffd700;
+}
+
+.project-info p {
+  font-size: 15px;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  color: #ccc;
+}
+
+.certificate-block {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  transition: background 0.3s ease;
+}
+
+.certificate-block:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.certificate-link {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.certificate-thumbnail img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #1a1a1a;
+}
+
+.certificate-details {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.certificate-details h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.certificate-details p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.view-credential-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077b5;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-credential-button:hover {
+  background-color: #005582;
+}
+
+#CourseNav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#CourseNav button {
+  color: #fff;
+  background-color: #222;
+  border: 1px solid #444;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#CourseNav button:hover {
+  background-color: #444;
+  color: #ffd700;
+}
+
+#CourseNav button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ffd700;
+}
+
+.course-section {
+  display: none;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  color: #fff;
+}
