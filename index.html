@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <title>Robert Rose - IT Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <script>
+      function toggleSection(id) {
+        const section = document.getElementById(id);
+        if (section.style.display === "none") {
+          section.style.display = "block";
+        } else {
+          section.style.display = "none";
+        }
+      }
+</script>
 </head>
 <body>
     <video autoplay muted loop id="BGVideo">
@@ -19,8 +29,21 @@
         <img src="./Assets/pic.jpg" alt="Profile Picture" class="profile-pic">
         </a>
     </div>
+    <hr>
+    <br>
+    <h4><em>Click the Button's to see the information: </em></h4>
+    <div class="sub-navbar">
+    <button onclick="toggleSection('Aboutme')">About Me</button>
+    <button onclick="toggleSection('Projects')">Projects</button>
+    <button onclick="toggleSection('Certifications')">Certificates</button>
+    <button onclick="toggleSection('Experience')">Experience</button>
+  </div>
   <nav>
   <div class="navbar">
+    <video autoplay muted loop id="NavBGVideo">
+  <source src="./Assets/Glitch.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
     <div class="nav-left">
       <a href="#About">About</a>
       <a href="#Goals">Goals</a>
@@ -33,10 +56,14 @@
   </div>
 </nav>
     <br><br>
+    <div id="Aboutme" class="toggle-section" style="display: none;">
     <h1>About Me:</h1>
     <div id = "About">
-        <p>I've always loved computers as long as i could remember, It started with wanting to learn to code because of seeing the indie scene for games become big because of people like me.
-           And after learning batch scripting (Yes you can make games in the command line), My love for computers branched into IT.
+        <p>I've always loved computers as long as i could remember, It started with wanting to learn to code because of seeing the indie scene for games become big because of people like me.<br>
+          <br>
+          I started learning batch scripting first, <br> then moved into more <strong>OOP</strong> <em>(Object Oriented Programming)</em> such as Java, C#, ECT.
+          <br>
+          Python Currently is the language that im currently studying.
         </p>
     </div>
     <br><br>
@@ -48,7 +75,9 @@
             Continue in the IT field.
             </p>
     </div>
+    </div>
     <br><br>
+    <div id="Projects" class="toggle-section" style="display: none;">
     <h1>- Current Projects -</h1>
     <div id = "projects">
       <br>
@@ -65,14 +94,86 @@
         </div>
          </a>
     </div>
+    <h5 class="slow-blink"><em>- More Coming Soon -</em></h5>
     </div>
-    <div id = "projects">
-        <h5 class="slow-blink"><em>- More Coming Soon -</em></h5>
     </div>
     <br><br>
+    <div id="Certifications" class="toggle-section" style="display: none;">
     <h1>Licenses & Certifications</h1>
     <div id = "projects">
         <a href="./Certs.html" target="_blank">Click Here</a>
+    </div>
+    </div>
+    <br>
+    <div id="Experience" class="toggle-section" style="display: none;">
+    <h1>Experience</h1>
+    <div id = "projects">
+        <div class="experience-entry">
+  <div class="company-logo">
+    <a href="https://www.linkedin.com/company/16182234/" target="_blank">
+      <img src="https://media.licdn.com/dms/image/v2/D560BAQEEa-LFUDH9sQ/company-logo_100_100/B56ZUpApCwGQAQ-/0/1740149789639/provalus_logo?e=1755734400&v=beta&t=kJ7numIVn0JaWknQPKQmQbdvihKYCBG1U9E_6HYjCZc" 
+           alt="Provalus logo" width="48" height="48" loading="lazy">
+    </a>
+  </div>
+
+  <div class="experience-details">
+    <a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8/" target="_blank">
+      <h3>Help Desk/Device Support Technician</h3>
+      <br>
+    </a>
+    <p><strong>Provalus · Full-time</strong></p>
+    <p>Jan 2021 - Nov 2024 · 3 yrs 11 mos</p>
+    <p>Jasper, Texas, United States</p>
+    <br>
+    <div class="job-description">
+      <p>On a day-to-day basis provided the following support:</p>
+      <br>
+      <p>
+        <strong>
+        Took outbound and inbound calls<br>
+        Assisted other agents with on-call issues<br>
+        Handled ServiceNow ticket escalations (major incident management)<br>
+        Created and managed IT support tickets in ServiceNow<br>
+        Troubleshot computer and Active Directory account issues<br>
+        Assisted with software installs and package creation<br>
+        Troubleshot O365 desktop app issues<br>
+        Helped resolve Zscaler installation/connection problems<br>
+        Supported Okta password changes and account troubleshooting<br>
+        Provided Tier 1 support for RICOH and WASP label printers
+        </strong>
+     </p>
+    </div>
+
+    <div class="skills">
+      <p><strong>Skills:</strong> Computer Maintenance · Okta · Troubleshooting · Single Sign-On · Software Installation · Windows · Printers · Active Directory · Command Prompt · Workday</p>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="center-wrapper">
+  <div class="experience-entrysmall">
+    <div class="company-logo">
+      <a href="https://www.linkedin.com/company/16182234/" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D560BAQEEa-LFUDH9sQ/company-logo_100_100/B56ZUpApCwGQAQ-/0/1740149789639/provalus_logo?e=1755734400&v=beta&t=kJ7numIVn0JaWknQPKQmQbdvihKYCBG1U9E_6HYjCZc" 
+             alt="Provalus logo" width="64" height="64" loading="lazy">
+      </a>
+    </div>
+
+    <div class="experience-details">
+      <a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8/" target="_blank">
+        <h3>Data Analyst</h3>
+        <br>
+      </a>
+      <p><strong>Provalus</strong></p>
+      <p>2020 - 2020 · Less than a year</p>
+      <div class="skills">
+        <p><strong>Skills:</strong> Data Entry</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
     </div>
       </div>
     <br><br>

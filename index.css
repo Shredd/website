@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
 * {
   box-sizing: border-box;
@@ -22,7 +22,7 @@ body, html {
 hr {
 
   border-style: double;
-  color: white;
+  color: black;
 
 }
 
@@ -50,10 +50,12 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background: rgba(82, 18, 18, 1);
+  width: 80%;
+  margin-left: 10%;
+  background: rgba(0, 0, 0, 1);
   z-index: 100;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 500px;
 }
 
 .navbar {
@@ -108,6 +110,7 @@ nav {
   margin-top: 60px;
   margin-bottom: 60px;
   box-shadow: 0 8px 20px rgba(0,0,0,1);
+  margin-top: 5%;
 }
 
 h1 {
@@ -154,12 +157,20 @@ p {
   margin: 10px 0;
 }
 
-#About, #Goals, #projects {
-  background-color: rgba(255, 255, 255, 0.05);
+#projects {
+  background-color: rgba(255, 255, 255, 0.08);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+#About, #Goals {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
 }
 
 footer {
@@ -169,7 +180,7 @@ footer {
   left: 0;
   width: 100%;
   height: 30px; /* Example height */
-  background-color: rgba(255, 0, 0, 0.3); /* Example background color */
+  background-color: rgba(0, 0, 0, 0.5); /* Example background color */
   color: white; /* Example text color */
   text-align: center; /* Example text alignment */
   padding: 10px; /* Example padding */
@@ -333,4 +344,127 @@ footer {
   margin: 20px 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   color: #fff;
+}
+
+.experience-entry {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: rgba(82, 18, 18, 0.85);
+  border-radius: 10px;
+}
+
+.experience-entrysmall {
+  display: flex;
+  gap: 16rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: rgba(82, 18, 18, 0.85);
+  border-radius: 10px;
+}
+
+.company-logo img {
+  border-radius: 8px;
+}
+
+.experience-details h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.experience-details p {
+  margin: 0.25rem 0;
+  color: white;
+}
+
+.job-description ul {
+  padding-left: 1.2rem;
+  color: white;
+}
+
+.skills p {
+  margin-top: 1rem;
+  color: white;
+  font-style: italic;
+}
+
+.sub-navbar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 12px; /* slightly larger rounding */
+  overflow: hidden;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.sub-navbar button {
+  padding: 14px 28px; /* increased padding for height & width */
+  font-size: 1.05rem; /* slightly larger text */
+  border: none;
+  background-color: #444;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-left: 1px solid #555;
+}
+
+/* First button – round left */
+.sub-navbar button:first-child {
+  border-left: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+/* Last button – round right */
+.sub-navbar button:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.sub-navbar button:hover {
+  background-color: #666;
+  color: #ffd700;
+}
+
+#NavBGVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.6; /* Adjust for readability */
+  pointer-events: none; /* Prevent interference with nav links */
+  border-radius: 500px;
+}
+
+.navbar .nav-left,
+.navbar .nav-right {
+  z-index: 2;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 2;
+}
+
+h4 {
+
+  background-color: #1a1a1a;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 500px;
+
 }
