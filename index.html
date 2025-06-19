@@ -5,14 +5,16 @@
     <title>Robert Rose - IT Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <script>
-      function toggleSection(id) {
-        const section = document.getElementById(id);
-        if (section.style.display === "none") {
-          section.style.display = "block";
-        } else {
-          section.style.display = "none";
-        }
-      }
+    function toggleHide(id) {
+      const sections = document.querySelectorAll('.toggle-section');
+        sections.forEach(section => {
+          if (section.id === id) {
+            section.style.display = (section.style.display === "block") ? "none" : "block";
+          } else {
+            section.style.display = "none";
+          }
+        });
+    }
 </script>
 </head>
 <body>
@@ -33,10 +35,10 @@
     <br>
     <h4><em>Click the Button's to see the information: </em></h4>
     <div class="sub-navbar">
-    <button onclick="toggleSection('Aboutme')">About Me</button>
-    <button onclick="toggleSection('Projects')">Projects</button>
-    <button onclick="toggleSection('Certifications')">Certificates</button>
-    <button onclick="toggleSection('Experience')">Experience</button>
+    <button onclick="toggleHide('Aboutme')">About Me</button>
+    <button onclick="toggleHide('Projects')">Projects</button>
+    <button onclick="toggleHide('Certifications')">Certificates</button>
+    <button onclick="toggleHide('Experience')">Experience</button>
   </div>
   <nav>
   <div class="navbar">
