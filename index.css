@@ -513,7 +513,8 @@ h4 {
 #Clickhere {
 
   font-size: 25px;
-
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5)
 }
 
 #Spacer {
