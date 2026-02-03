@@ -1,314 +1,86 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Robert Rose - IT Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-    <script>
-    function toggleHide(id) {
-      const sections = document.querySelectorAll('.toggle-section');
-        sections.forEach(section => {
-          if (section.id === id) {
-            section.style.display = (section.style.display === "block") ? "none" : "block";
-          } else {
-            section.style.display = "none";
-          }
-        });
-    }
-</script>
-</head>
-<body>
-    <video autoplay muted loop id="BGVideo">
-    <source src="./Assets/BG.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-    </video>
-          <div id="Film"></div>
-    <div id = "PageContent">
-      <div id="ProfileBackgroundcontainer">
-        <img src="./Assets/Profile.jpg" alt="Profile Picture Background" class="ProfileBackground1">
-    <h1 id="HeadTitle">Robert Rose - <em class="slow-blink"> Service Desk Agent</em></h1>
-    <br>
-    <div class="profile-container">
-        <a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8" target="_blank">
-        <img src="./Assets/pic.jpg" alt="Profile Picture" class="profile-pic">
-        </a>
-    </div>
-    <br>
-    <p id = "Status"><strong>Announcements: </strong><em class="slow-blink"> Currently Working</em></p>
-    <p id = "Status"><strong>To Contact Me: </strong><br><em>Please Message me via linkedin or the contact methods that are listed on my resume.</em></p>
-    </div>
-    <br><br>
-      <div id = "projects">
-      <img src="./Assets/backgroundborder.jpg" alt="" class="InfoBackground">
-    <br><br>
-    <h4><em>Click the Button's to see the information below appear: </em></h4>
-    <div class="sub-navbar">
-    <button onclick="toggleHide('Aboutme')">About Me</button>
-    <button onclick="toggleHide('Projects')">Personal Projects</button>
-    <button onclick="toggleHide('Certifications')">Certificates</button>
-    <button onclick="toggleHide('Experience')">Experience</button>
-  </div>
-  <nav>
-  <div class="navbar">
-    <video autoplay muted loop id="NavBGVideo">
-  <source src="./Assets/Glitch.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-    <div class="nav-left">
-      <a href="./Downloads/RobertRoseResume.docx" download>Download Resume</a>
-    </div>
-    <div class="nav-right">
-      <a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Shredd" target="_blank">GitHub</a>
-    </div>
-  </div>
-</nav>
-    <br><br>
-    <div id="Aboutme" class="toggle-section" style="display: none;">
-    <h1>About Me:</h1>
-    <br>
-    <div id = "About">
-        <p>I've always loved computers as long as i could remember, It started with wanting to learn to code because of seeing the indie scene for games be defined by people that are just like me.<br>
-          <br>
-          I started learning batch scripting first, <br> then moved into more <strong>OOP</strong> <em>(Object Oriented Programming)</em> such as Java, C#, ECT.
-          <br>
-          C++ is the language that im currently studying.<br>
-          <br>
-          <br>
-          <p>
-            <strong>Skills:</strong> <br>
-            Python: Python 3, HTML, Javascript, C#, Java, Command Line, Active Directory, ADManager, Batch Scripting, Printer Troubleshooting, Software Installs, Computer Troubleshooting, Computer Cleaning, Customer Service
-          </p>
-          <br>
-          <p>
-          <strong>My Hobbies Are:</strong><br>
-          Music (Listening, Playing Guitar and Creating Music),
-          Computer Programming,
-          Gaming
-          </p>
-        </p>
-    </div>
-    <div id="Spacer"></div>
-    <h1>My Current Goals:</h1>
-    <br>
-    <div id = "Goals">
-            <p>
-            Release an Music Album. <br>
-            Create a software page with custom IT Applications. <br>
-            Continue in the IT field.
-            </p>
-    </div>
-    </div>
-    <br><br>
-    <div id="Projects" class="toggle-section" style="display: none;">
-    <h1>Current Projects</h1>
-    <br>
-    <div id = "projects">
-      <br>
-            <div class="project-card">
-                <a href="https://github.com/Shredd/Tom2.0" target="_blank">
-                <div class="project-card-inner">
-                <div class="project-thumb">
-                <i class="fa fa-github" style="font-size:48px;color:white"></i>
-            </div>
-            <div class="project-info">
-            <h3>Tom 2.0</h3>
-            <p>Updated version of the Tom Project written in Python 3 – a personal assistant in a single script</p>
-        </div>
-        </div>
-         </a>
-    </div>
-    <div class="project-card">
-                <a href="https://github.com/Shredd/TabRefresher" target="_blank">
-                <div class="project-card-inner">
-                <div class="project-thumb">
-                <i class="fa fa-github" style="font-size:48px;color:white"></i>
-            </div>
-            <div class="project-info">
-            <h3>TabRefresher</h3>
-            <p>Custom Plugin for firefox that refreshs tabs</p>
-        </div>
-        </div>
-         </a>
-    </div>
-    <br>
-    <h5 class="slow-blink"><em>- More Coming Soon -</em></h5>
-    </div>
-    <div id="Spacer"></div>
-    <h1>Past Projects</h1>
-    <br>
-    <div id = "projects">
-      <br>
-            <div class="project-card">
-                <a href="https://github.com/Shredd/SimpleJavaGameLoop" target="_blank">
-                <div class="project-card-inner">
-                <div class="project-thumb">
-                <i class="fa fa-github" style="font-size:48px;color:white"></i>
-            </div>
-            <div class="project-info">
-            <h3>Simple Java Game Loop</h3>
-            <p>A Simple Java Game Loop coded in a beginner friendly Level to start as a template</p>
-        </div>
-        </div>
-         </a>
-    </div>
-    <div class="project-card">
-                <a href="https://github.com/Shredd/StarterGameProject" target="_blank">
-                <div class="project-card-inner">
-                <div class="project-thumb">
-                <i class="fa fa-github" style="font-size:48px;color:white"></i>
-            </div>
-            <div class="project-info">
-            <h3>Starter Game Project</h3>
-            <p>A Simple C++ Game Loop coded with SFML <em>(Simple and Fast Multimedia Library)</em> in a beginner friendly Level to start as a template</p>
-        </div>
-        </div>
-         </a>
-    </div>
-    <div class="project-card">
-                <a href="https://github.com/Shredd/Template-Game-Project" target="_blank">
-                <div class="project-card-inner">
-                <div class="project-thumb">
-                <i class="fa fa-github" style="font-size:48px;color:white"></i>
-            </div>
-            <div class="project-info">
-            <h3>Template Game Project</h3>
-            <p>A Simple Python Game Loop coded with Pygame in a beginner friendly Level to start as a template</p>
-        </div>
-        </div>
-         </a>
-    </div>
-    <div class="project-card">
-                <a href="https://github.com/Shredd/Tom" target="_blank">
-                <div class="project-card-inner">
-                <div class="project-thumb">
-                <i class="fa fa-github" style="font-size:48px;color:white"></i>
-            </div>
-            <div class="project-info">
-            <h3>Tom</h3>
-            <p>Outdated Script that inspired Tom 2.0</p>
-        </div>
-        </div>
-         </a>
-    </div>
-    </div>
-    </div>
-    <br><br>
-    <div id="Certifications" class="toggle-section" style="display: none;">
-    <h1>Licenses & Certifications</h1>
-    <br>
-    <div id = "projects">
-        <a href="./Certs.html" id="Clickhere" target="_blank">Click Here To View</a>
-    </div>
-    </div>
-    <br>
-    <div id="Experience" class="toggle-section" style="display: none;">
-    <h1>Experience</h1>
-    <br>
-    <div id = "projects">
-      <div class="experience-entry">
-  <div class="company-logo">
-    <a href="https://www.linkedin.com/company/16182234/" target="_blank">
-      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQFJ5ulfbahfRw/company-logo_100_100/B4EZp5Ehz0HcA4-/0/1762967822139/provalus_logo?e=1771459200&v=beta&t=T3gyV7UJ-4Zis-vvelpiGM4BKK2wE7kgp69wwq9wc1I" 
-           alt="Provalus logo" width="64" height="64" loading="lazy">
-    </a>
-  </div>
+	<head>
+		<title>Robert Rose - Service Desk Agent | Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<center><a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8" class="image avatar"><img src="images/pic.jpg" alt="" /></a></center>
+					<center><h1 style="background-color:black; color: green; border: 1px solid green; border-radius: 10px;"><strong>Robert Rose</strong></h1></center>
+						<br />
+					<center><h1><i>Service Desk Agent</i></h1></center>	
+				</div>
+			</header>
 
-  <div class="experience-details">
-    <a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8/" target="_blank">
-      <h3 id="JobTitle">Service Desk Agent</h3>
-      <br>
-    </a>
-    <section id="JobDetails">
-    <p><strong>Provalus · Full-time - On-site</strong></p>
-    <p>Jul 2025 - Present</p>
-    <p>Jasper, Texas, United States</p>
-    <br>
-    <div class="job-description">
-      <p>
-        <strong>
-        Provide client support and technical assistance; ranging from password resets to desktop software/hardware troubleshooting, bit-locker recovery, printer support and deployment, misc hardware support, software management with InTune.
-        </strong>
-     </p>
-    </div>
+		<!-- Main -->
+			<div id="main">
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<center><h2 style="color: white; background-color: black; opacity: 0.6;">About Me</h2></center>
+						</header>
+						<p>I am a dedicated Service Desk Agent with experience in providing technical support and resolving user issues efficiently. My background includes working with various software platforms and hardware systems to ensure smooth operations for clients.
+							<br><br>
+							I Love creating efficient solutions to technical problems such as creating scripts to automate repetitive tasks, improving system performance, and enhancing user experience.
+							<br><br>
+							To see more about my professional background and certifications, please visit my LinkedIn profile by clicking the button below.
+						</p>
+						<ul class="actions">
+							<li><a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8" class="button">Learn More</a></li>
+						</ul>
+					</section>
 
-    <div class="skills">
-      <p><strong>Skills:</strong>  Computer Maintenance · Okta · Computer Hardware Troubleshooting · Splunk · Software Installation · Windows · Printers · Active Directory · Command Prompt · Workday · Microsoft Intune · Bitlocker · Customer Service · Microsoft Entra ID · ADManager </p>
-    </div>
-    </section>
-  </div>
-</div>
-        <div class="experience-entry">
-  <div class="company-logo">
-    <a href="https://www.linkedin.com/company/16182234/" target="_blank">
-      <img src="https://media.licdn.com/dms/image/v2/D4E0BAQFJ5ulfbahfRw/company-logo_100_100/B4EZp5Ehz0HcA4-/0/1762967822139/provalus_logo?e=1771459200&v=beta&t=T3gyV7UJ-4Zis-vvelpiGM4BKK2wE7kgp69wwq9wc1I" 
-           alt="Provalus logo" width="64" height="64" loading="lazy">
-    </a>
-  </div>
+				<!-- Two -->
+					<section id="two">
+						<center><h2 style="color: white; background-color: black; opacity: 0.6;">Recent Coding Projects</h2></center>
+						<br>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<Center><h3>Tom 2.0</h3></Center>
+								<br>
+								<p>A Python 3 Script aimed at creating a personal assistant, Visit Project Here: <a href="https://github.com/Shredd/Tom2.0" class="icon brands fa-github"><span class="label">Github</span></a></p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<Center><h3>TabRefresher</h3></Center>
+								<br>
+								<p>A Javascript Plugin for Firefox to refresh pages, Visit Project Here: <a href="https://github.com/Shredd/TabRefresher" class="icon brands fa-github"><span class="label">Github</span></a></p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item" style="opacity: 0.3;">
+								<Center><h3>Shredd's File Cleaner - Coming Soon</h3></Center>
+								<br>
+								<p>A Java Program aimed at creating a simple to use file cleaning program</p>
+							</article>
+						</div>
+					</section>
+					<section id="three">
+					<center>Page Created in 2026 | Template From: <a href="https://html5up.net/strata">HTML5 UP</a></center>
+					</ul>
+					</section>
+			</div>
 
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/Shredd" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</div>
+			</footer>
 
-  <div class="experience-details">
-    <a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8/" target="_blank">
-      <h3 id="JobTitle">Technical Support Analyst</h3>
-      <br>
-    </a>
-    <section id="JobDetails">
-    <p><strong>Provalus · Full-time - On-site</strong></p>
-    <p>Jan 2021 - Nov 2024 · 3 yrs 11 Months</p>
-    <p>Jasper, Texas, United States</p>
-    <br>
-    <div class="job-description">
-      <p>
-        <strong>
-        Provide client support and technical assistance; ranging from password resets to desktop software/hardware troubleshooting, bit-locker recovery, printer support and deployment, misc hardware support, software management with InTune.
-        </strong>
-     </p>
-    </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-    <div class="skills">
-      <p><strong>Skills:</strong>  Computer Maintenance · Okta · Computer Hardware Troubleshooting · Splunk · Software Installation · Windows · Printers · Active Directory · Command Prompt · Workday · Microsoft Intune · Bitlocker · Customer Service · Microsoft Entra ID · ADManager </p>
-    </div>
-    </section>
-  </div>
-</div>
-
-<br>
-<div class="center-wrapper">
-  <div class="experience-entrysmall">
-    <div class="company-logo">
-      <a href="https://www.linkedin.com/company/16182234/" target="_blank">
-        <img src="https://media.licdn.com/dms/image/v2/D4E0BAQFJ5ulfbahfRw/company-logo_100_100/B4EZp5Ehz0HcA4-/0/1762967822139/provalus_logo?e=1771459200&v=beta&t=T3gyV7UJ-4Zis-vvelpiGM4BKK2wE7kgp69wwq9wc1I" 
-             alt="Provalus logo" width="64" height="64" loading="lazy">
-      </a>
-    </div>
-
-    <div class="experience-details">
-      <a href="https://www.linkedin.com/in/robert-rose-jr-0418331b8/" target="_blank">
-        <h3>Data Analyst</h3>
-        <br>
-      </a>
-      <p><strong>Provalus</strong></p>
-      <p>2020 - 2020 · Less than a year</p>
-      <div class="skills">
-        <p><strong>Skills:</strong> Data Entry</p>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-    </div>
-      </div>
-    <br><br>
-    <footer>
-      <video autoplay muted loop id="NavBGVideo1">
-        <source src="./Assets/Glitch.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      | 2025 | Robert Rose - IT Portfolio
-    </footer>
-    </div>
-    </div>
-</body>
+	</body>
 </html>
